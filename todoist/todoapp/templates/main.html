@@ -62,7 +62,7 @@
                         <div class="toast-header">
                           <strong class="me-auto">{{ i.status  }}</strong>
                           <small>{{ i.date }}</small>
-                          {% comment %} <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> {% endcomment %}
+                          <button type="button" class="btn-close"  aria-label="Close" onclick="location.href='/delete/{{i.pk}}'"></button>
                         </div>
                         <div class="toast-body">
                           {{i.desc}}

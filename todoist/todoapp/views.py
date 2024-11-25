@@ -18,3 +18,8 @@ def main(request):
         )
         temp.save()
         return redirect('/')
+    
+def del_view(request, pk):
+    t = Todo.objects.get(pk=pk)
+    t.delete()
+    return redirect('/')
